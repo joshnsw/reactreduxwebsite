@@ -1,0 +1,12 @@
+@import url("image.css");
+
+@import url("banner.css");
+
+@import url("card.css");
+
+@import url("navbar.css");
+
+*{
+
+  margin: 0;
+}

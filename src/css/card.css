@@ -1,0 +1,202 @@
+.container-contents{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  padding: 3em 1em;
+  font-family: 'Bebas Neue';
+}
+
+
+.card-container{
+display: flex;
+gap: 1em;
+}
+
+.card{
+  justify-content: center;
+
+  box-shadow: 0 0 5px rgb(230 230 230);
+  text-align: center;
+  padding: 20px;
+  border: 1px solid rgb(230,230,230);
+  width: 200px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+
+}
+
+
+
+.container-pricing{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background: black;
+  height: 20rem;
+  font-family: 'Bebas Neue';
+  color: rgb(255, 254, 254);
+
+}
+
+.container-pricing{
+
+  gap: 0.5em;
+  height: 500px;
+}
+
+.container-pricing > h1{
+  text-align: center;
+ font-size: 36px;
+}
+
+.container-pricing > p{
+  text-align: center;
+ font-size: 18px;
+}
+
+
+
+.container-form > * {
+  width: 10em;
+  padding: 0.5em;
+  font-size: 2em;
+  display: flex;
+
+}
+
+
+.container-form > button{
+  background-color: #000000; /* Green */
+  border: 3px solid;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  width: 5.5em;
+  margin-top: 1em;
+
+}
+
+.pcard{
+  justify-content: center;
+
+  box-shadow: 0 0 5px rgb(230 230 230);
+  text-align: center;
+  padding: 20px;
+  border: 1px solid rgb(230,230,230);
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+
+}
+
+.pcard > a:hover{
+  cursor: pointer;
+
+}
+
+
+
+
+.container-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap:0.5em;
+  text-align: center;
+}
+
+
+.container-store {
+  display: flex;
+  flex-direction: row;
+
+}
+
+
+
+.container-store-content {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  font-family: 'Bebas Neue';
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  flex-basis: 80%;
+}
+
+.container-store-content > h1{
+  margin-bottom: 1em;
+}
+
+.cart {
+  font-family: 'Bebas Neue';
+  display: flex;
+  flex-direction: column;
+  padding-top: 0.5em;
+  font-size: 2em;
+  flex-basis: 20%;
+  background: grey;
+  text-align: center;
+}
+
+
+
+
+.container-footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 5rem;
+  align-items: center;
+  font-family: 'Bebas Neue';
+  padding: 0 1em;
+}
+
+
+
+
+@media  screen and (max-width: 900px) {
+  /* Your styles here */
+  .card-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    }
+
+  .card{
+
+    width: 150px;
+    height: 150px;
+
+  }
+
+  .pcard{
+
+    width: 60px;
+    height: 60px;
+
+  }
+
+
+
+.container-store-content {
+
+  flex-basis: 60%;
+}
+
+.cart {
+
+    flex-basis: 40%;
+}
+
+
+
+}
