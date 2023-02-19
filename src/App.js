@@ -20,15 +20,10 @@ const Header = () => (
       <p>Elite Fitness Emporium</p>
       </div>
       <div className="left-section">
-      <Link to="/" className = "link">
+      <Link to="/reactreduxwebsite" className = "link">
       Home
       </Link>
-      <Link to="/" className = "link">
-      Instructors
-      </Link>
-      <Link to="/" className = "link">
-      Locations
-      </Link>
+
       <Link to="/store" className = "link">
       Store
       </Link>
@@ -77,13 +72,13 @@ const Contents = () => (
 const Contact = () => (
 
   <div id ="contact" class="container-pricing">
-  <div>
+  <div className="container-pricing-header">
   <h1>Pricing</h1>
-
   <p>Fill in our form and we will get back to you </p>
   </div>
 
   <form class = "container-form" action="">
+
     <label for="name">Name</label>
     <input id="name" type="text"/>
     <label for="email">Email</label>
@@ -91,7 +86,7 @@ const Contact = () => (
      <button>Submit</button>
   </form>
 
-</div>
+  </div>
 )
 
 
@@ -179,19 +174,21 @@ const Store = () => {
 
   </div>
     <div className="cart">
-      Cart
+     <h3>Cart</h3>
 
       {cart.map(item =>
         <>
-        <p>{item.name}</p>
-        <p>{item.price}</p>
-        <p>{item.quantity}</p>
-        <a onClick={() => addQuantity(item)} >+</a>
+        <div >
+        <p>{item.name},{item.price}</p>
+
+        <p>Qty: {item.quantity}</p>
+        <a onClick={() => addQuantity(item)} >+ </a>
         <a onClick={() => minQuantity(item)}>-</a>
+        </div>
         </>
       )}
 
-    { cart.length > 0 ? <><a onClick={() => dispatch(emptyCart())}>Clear Cart</a> <p>Cart total: {cartTotal}</p></>: <p>Cart Empty</p> }
+    { cart.length > 0 ? <><a onClick={() => dispatch(emptyCart())}>Clear Cart</a> <p>Cart total: {cartTotal}</p></>: <p>Cart Empty..</p> }
     </div>
   </div>
   </> )
@@ -205,10 +202,15 @@ function App() {
 
       <Routes>
 
-        <Route path="/" element={<>
+        <Route path="/reactreduxwebsite" element={<>
         <Banner/>
         <Contents/>
-      <Contact/></>} />
+      <Contact/></> } />
+
+      <Route path="/" element={<>
+        <Banner/>
+        <Contents/>
+      <Contact/></> } />
 
       <Route path="/store" element={<>
         <Store/>
