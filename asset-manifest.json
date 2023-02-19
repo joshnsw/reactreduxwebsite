@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/reactreduxwebsite/static/css/main.4401d8c7.css",
+    "main.js": "/reactreduxwebsite/static/js/main.893abb3f.js",
+    "static/media/logoimage.png": "/reactreduxwebsite/static/media/logoimage.42fd8e1f89a262d09fe2.png",
+    "index.html": "/reactreduxwebsite/index.html",
+    "main.4401d8c7.css.map": "/reactreduxwebsite/static/css/main.4401d8c7.css.map",
+    "main.893abb3f.js.map": "/reactreduxwebsite/static/js/main.893abb3f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4401d8c7.css",
+    "static/js/main.893abb3f.js"
+  ]
+}
