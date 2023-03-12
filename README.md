@@ -5,6 +5,14 @@
 I am currently doing a course called fullstackopen, and I wanted to use what I learnt about redux and implement it in a project, so I decided to built a mock gym website that has a e-commerce store, with redux handling the state of the store.
 
 
+
+<ins>Home Page</ins>
+![screenshot](https://github.com/joshnsw/joshportfolio/blob/master/assets/reactwebsitehome.png)
+
+<ins>Store</ins>
+![screenshot](https://github.com/joshnsw/joshportfolio/blob/master/assets/reactwebsitestore.png)
+
+
 ## Usage
 
 In the nav bar, there are two pages you can access:
